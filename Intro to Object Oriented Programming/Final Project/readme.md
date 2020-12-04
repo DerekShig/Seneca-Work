@@ -2,8 +2,6 @@
 
 Because of the pandemic and prevention of the spread of COVID19, hospitals need to screen the patients and separate those in need of COVID-test from others. This has to be done in an orderly fashion by letting the patients know what is the expected wait time and let them know when they can be admitted. 
 
-Your task is to help complete the implementation of the Pre-Triage application. 
-
 ## The Pre-Triage Application
 The application starts by displaying a simple menu with three options:
 ```Text
