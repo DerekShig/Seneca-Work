@@ -8,6 +8,14 @@
   color: #ec3e42;
 }
 
+.hidden {
+  display: none;
+}
+
+.radio {
+  width: 1000px;
+}
+
 .alert {
   text-align: center;
   padding: 5px;
@@ -142,14 +150,13 @@ hr {
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  width: 20%;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 30px;
 }
 
 .footer i {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .fa-twitter {
@@ -164,12 +171,64 @@ hr {
   color: #ff0000;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.subscribe input[type="email"] {
+  width: 400px;
+  padding: 10px;
+}
+
+.subscribe input[type="submit"] {
+  padding: 10px;
+}
+
+.subscribe p {
+  font-size: 1.7em;
+  margin-bottom: 5px;
+}
+
 .copyright {
   color: white;
   background: #222831;
   width: 100%;
   text-align: center;
   padding: 10px 0px;
+}
+
+/* CONTACT PAGE */
+
+.contact-form {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 92px;
+}
+
+.contact-form input[type="submit"] {
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+.input {
+  padding: 5px;
+  width: 400px;
+}
+
+.textarea * {
+  vertical-align: text-top;
+  resize: none;
+}
+
+.contact-form div {
+  margin: 20px 0px;
 }
 
 /* Break-points */
@@ -217,13 +276,39 @@ hr {
     margin-bottom: 10px;
   }
   .footer {
-    width: 40%;
+    flex-direction: column;
+  }
+  .icons {
+    margin: 0 auto;
+  }
+  .subscribe input[type="email"] {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .subscribe input[type="submit"] {
+    padding: 5px;
+    width:  100px;
+  }
+  .subscribe p {
+    padding: 5px;
   }
   .copyright {
     font-size: 0.9em;
   }
   .alert {
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .input {
+    width: 300px;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
   }
 }
 

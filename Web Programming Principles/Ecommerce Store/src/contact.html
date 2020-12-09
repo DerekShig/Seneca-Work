@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>DS Games</title>
+    <link rel="icon" type="image/png" href="images/headset.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="alert">
+      <p>Grand opening sale! 20% off with code GAME</p>
+    </div>
+
+    <main>
+      <header>
+        <div class="logo">
+          <!-- Icon by Freepik -->
+          <img src="images/headset.png" alt="logo" />
+          <p>DS Games</p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#">Games</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+     
+      <form class="contact-form" action="https://httpbin.org/post" method="POST">
+
+        <h1>Contact Us</h1>  
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="input" name="name" required>
+        </div>
+
+        <div>
+          <label for="contact-email">Email:</label>
+          <input type="email" id="contact-email" class="input" name="email" required>
+        </div>
+
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" class="input" name="address" required>
+        </div>
+
+        <div>
+          <label for="cities">City:</label>
+          <input list="cities" name="city" id="city" class="input" required>
+          <datalist id="cities">
+            <option value="Toronto">
+            <option value="Ottawa">
+            <option value="Vancouver">
+            <option value="Montreal">
+            <option value="Ajax">
+          </datalist>
+        </div>
+
+        <div>
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" id="postalCode" pattern="^[A-Za-z]{1}\d{1}[A-Za-z]{1}[ ]?\d{1}[A-Za-z]{1}\d{1}$" class="input" name="postal code" required>
+        </div>
+
+        <div class="radio">
+          <input type="radio" id="Question" name="subject" value="Question" required>
+          <label for="Question">Question</label>
+          <input type="radio" id="Comment" name="subject" value="Comment">
+          <label for="Comment">Comment</label>
+          <input type="radio" id="orderProblem" name="subject" value="orderProblem">
+          <label for="orderProblem">Order</label>
+        </div>
+
+        <div class="orderText hidden">
+          <label for="order">Order#:</label>
+          <input type="text" id="order" name="order number">
+        </div>
+
+        <div class="textarea">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="50"  placeholder="Enter message." class="input" required></textarea>
+        </div>
+
+        <input type="text" name="Derek Shigetomi" class="hidden">
+
+        <input type="submit">
+
+      </form>
+
+      <hr />
+
+        <footer class="footer">
+          <div class="icons">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-phone"></i></a>
+          </div>
+          <div class="subscribe">
+            <p>Daily Newsletter</p>
+            <form action="https://formspree.io/f/mvogbqvk" method="POST">
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </footer>
+      </main>
+
+      <div class="copyright">
+        <p>Copyright &copy DS Games. Made by Derek Shigetomi</p>
+      </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
