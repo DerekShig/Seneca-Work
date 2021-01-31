@@ -1,0 +1,25 @@
+//==============================================
+// Name:           Derek Shigetomi
+// Student Number: 028-970-135
+// Email:          dgshigetomi@myseneca.ca
+// Date:           01/31/2021
+// Section:        NBB
+// Workshop:       2
+//==============================================
+
+In this workshop I learned how to use the chrono library to time the 
+length of function execution times. I think this would be something 
+really useful in a real world setting since you can test if refracturing 
+code can make it run more efficiently. The main topic I learned in the 
+workshop is move semantics. In my implementation, I used copy 
+constructor and assignment operator. Because the copy has to heap 
+allocate memory, the execution time is greater. The move constructor 
+I used is very similar, except that it takes a rvalue reference and 
+instead of copying the entire object and creating new memory, it 
+instead simply takes the pointer reference of the copy object and 
+set the copy object to null. 
+
+In essence it is taking the resources from the object, and since the 
+copy object is a rvalue, it will go out of scope. When timing the move 
+functions, it is clear that It runs much faster because it does not have 
+to allocate new memory.
