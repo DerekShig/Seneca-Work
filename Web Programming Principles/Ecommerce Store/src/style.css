@@ -322,4 +322,7 @@ label {
   .footer {
     padding: 20px;
   }
+  .pad {
+    display: none;
+  }
 }
